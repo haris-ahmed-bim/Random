@@ -1,0 +1,14 @@
+{
+  "name": "authjs-sveltekit-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "pnpm --filter web dev --open",
+    "build": "pnpm --filter web build",
+    "preview": "pnpm --filter web preview",
+    "db:start": "pnpm --filter web db:start",
+    "db:stop": "pnpm --filter web db:stop",
+    "db:push": "pnpm --filter web db:push",
+    "db:studio": "pnpm --filter web db:studio"
+  }
+}

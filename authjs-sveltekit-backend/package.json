@@ -1,0 +1,41 @@
+{
+  "name": "authjs-sveltekit-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:start": "docker compose up -d",
+    "db:stop": "docker compose down",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@auth/core": "^0.34.0",
+    "@auth/drizzle-adapter": "^0.8.0",
+    "@auth/sveltekit": "^0.13.0",
+    "@ai-sdk/google": "^0.1.12",
+    "ai": "^3.4.9",
+    "bcryptjs": "^2.4.3",
+    "drizzle-orm": "^0.36.0",
+    "lucia": "^3.2.0",
+    "nodemailer": "^6.9.14",
+    "postgres": "^3.4.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/nodemailer": "^6.4.15",
+    "@types/node": "^22.5.0",
+    "drizzle-kit": "^0.24.0",
+    "eslint": "^9.9.0",
+    "svelte": "^4.2.18",
+    "@sveltejs/kit": "^2.5.18",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  }
+}
